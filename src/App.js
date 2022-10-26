@@ -7,17 +7,47 @@ import Project from './components/Project';
 
 function App() {
 
+ 
+const [currentPage, setCurrentPage] = useState('About')
+
+const selectedPage = () => {
+    if (currentPage === 'Contact') {
+    return <Contact />
+
+  } 
+    if (currentPage === 'Portfolio') {
+    return <Project />
+  }
+    if (currentPage === 'About') {
+    return <About />
+  }
+}
+
+const pageChange = (page) => setCurrentPage(page);
+
   return (
-    <div>
-      <Nav />
-      <Header/>
-      <main>
-          <About />       
-           <Project/>
-      </main>
-      <Footer />
-    </div>
-   
+  <>
+  <header>
+
+  <Header 
+  currentPage={currentPage} 
+  pageChange={pageChange}
+  />
+
+  </header>
+
+  <main>
+
+    {selectedPage()}
+
+  </main>
+ 
+  <footer>
+
+  <Footer />
+
+  </footer>
+  </>
   );
 }
 
