@@ -132,6 +132,20 @@ form {
   width: 40%;
 }
 
+.footer{
+  margin-top: 200px;
+  align-items: center;
+  align-content: flex-start;
+  color:#a8f0f6
+
+}
+
+.span {
+  color: #0b909a;
+}
+.span2{
+  color: aqua;
+}
 input {
   font-size: 1rem;
   padding: 0.25rem;
