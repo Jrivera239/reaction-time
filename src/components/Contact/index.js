@@ -15,7 +15,7 @@ const ContactForm = () => {
 
     const toastifySuccess = () => {
       toast('', {
-        position: 'bottom-right',
+        position: 'bottom-left',
         hideProgressBar: true,
         closeOnClick: true,
         pauseOnHover: true,

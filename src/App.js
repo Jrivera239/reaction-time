@@ -1,9 +1,9 @@
-import React from 'react';
-import Nav from './components/Nav';
+import React, { useState } from 'react';
 import About from './components/About';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header';
 import Project from './components/Project';
+import Contact from './components/Contact';
 
 function App() {
 
@@ -13,7 +13,6 @@ const [currentPage, setCurrentPage] = useState('About')
 const selectedPage = () => {
     if (currentPage === 'Contact') {
     return <Contact />
-
   } 
     if (currentPage === 'Portfolio') {
     return <Project />
