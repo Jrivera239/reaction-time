@@ -9,7 +9,7 @@ main {
   --secondary: #F3A847;
   --tertiary: #B12704;
   --light: #fafafa;
-  --dark: #020000;
+  --dark: #1d1d1d;
   --darker: #111111;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
@@ -34,7 +34,7 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: .1em;
-  background: var(--dark);
+  background:radial-gradient(var(--dark),rgb(0, 0, 0)) ;
   color: var(--light);
   font-family: 'Poiret One', cursive;
 
@@ -53,27 +53,33 @@ h6 {
 }
 
 h1 {
+  gap: 1rem;
   font-size: 2.25rem;
 }
 
 h2 {
   font-size: 2rem;
+  gap: 1rem;
 }
 
 h3 {
   font-size: 1.75rem;
+  gap: 1rem;
 }
 
 h4 {
   font-size: 1.5rem;
+  gap: 1rem;
 }
 
 h5 {
   font-size: 1.25rem;
+  gap: 1rem;
 }
 
 h6 {
   font-size: 1rem;
+  gap: 1rem;
 }
 
 p {
@@ -87,9 +93,7 @@ a {
   font-weight: bold;
 }
 
-a:hover {
-  text-decoration: underline;
-}
+
 
 header {
   background: var(--dark);
